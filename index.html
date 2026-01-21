@@ -1,56 +1,491 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stream-mark/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream Mark — Карьерный апгрейд нового поколения</title>
+<link rel="icon"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1A1A'/%3E%3Cpath d='M8 22L14 16L18 20L24 10' stroke='%2300F0FF' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='24' cy='10' r='2.5' fill='%2300F0FF'/%3E%3C/svg%3E"
+  type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+   
     <script type="module" crossorigin src="/stream-mark/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stream-mark/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/stream-mark/assets/styles-DKNlWyPf.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a href="/" class="logo">
+      <span class="logo__dot"></span>
+      Stream Mark
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#strategy" class="nav__link">Стратегия</a></li>
+        <li class="nav__item"><a href="#benefits" class="nav__link">Преимущества</a></li>
+        <li class="nav__item"><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary btn--sm">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
+<div class="nav-overlay" id="nav-overlay"></div>
 
     <main>
       <!-- Loads the specified .html file -->
       
+    <section class="hero" id="hero">
+        <div class="hero__bg" id="hero-bg-canvas"></div>
+
+        <div class="container hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Воплотите мечты <br>в реальность: <span class="text-highlight">Карьерный апгрейд</span> нового
+                    поколения
+                </h1>
+                <p class="hero__description">
+                    Откройте новые возможности с платформой Stream Mark. Мы предоставляем инновационные технологии и
+                    стратегии роста, которые работают на вас. Переосмыслите подход к развитию уже сегодня.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                    <a href="#strategy" class="btn btn--outline">Узнать детали</a>
+                </div>
+            </div>
+
+<div class="hero__visual">
+    <div class="hero__image-wrapper" id="hero-image-trigger">
+        <img src="/stream-mark/assets/one-Ct0oYCxI.jpg" alt="Career Growth" class="hero__main-img">
+        <div class="hero__image-overlay"></div>
+    </div>
+    <div class="hero__circle-decor"></div>
+</div>
+        </div>
+    </section>
+<section class="strategy" id="strategy">
+    <div class="container strategy__container">
+        <div class="strategy__left">
+            <div class="strategy__sticky">
+                <span class="strategy__badge">Инновационный подход</span>
+                <h2 class="strategy__title">Стратегия роста на базе <span class="text-highlight">инноваций</span></h2>
+                <p class="strategy__text">
+                    Мы используем передовую цифровую инфраструктуру и AI-инструменты для реальных задач вашего
+                    карьерного апгрейда.
+                </p>
+                <div class="strategy__cta">
+                    <a href="#contact" class="btn btn--primary">Получить больше информации</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="strategy__right">
+            <div class="strategy-card">
+                <div class="strategy-card__number">01</div>
+                <div class="strategy-card__icon"><i data-lucide="microscope"></i></div>
+                <h3 class="strategy-card__title">Глубокий аудит компетенций</h3>
+                <p class="strategy-card__description">
+                    Используем AI-инструменты для анализа ваших текущих навыков и выявления скрытых точек роста в
+                    условиях рынка 2026 года.
+                </p>
+            </div>
+
+            <div class="strategy-card">
+                <div class="strategy-card__number">02</div>
+                <div class="strategy-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3 class="strategy-card__title">Проектирование будущего</h3>
+                <p class="strategy-card__description">
+                    Создание индивидуального трека развития: от текущей позиции до роли вашей мечты с использованием
+                    методологий, доказавших эффективность.
+                </p>
+            </div>
+
+            <div class="strategy-card">
+                <div class="strategy-card__number">03</div>
+                <div class="strategy-card__icon"><i data-lucide="zap"></i></div>
+                <h3 class="strategy-card__title">Акселерация и запуск</h3>
+                <p class="strategy-card__description">
+                    Быстрый и лёгкий старт изменений. Практики, применимые уже сегодня, позволят вам оценить перспективы
+                    проекта в первые недели.
+                </p>
+            </div>
+
+            <div class="strategy-card">
+                <div class="strategy-card__number">04</div>
+                <div class="strategy-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3 class="strategy-card__title">Масштабирование успеха</h3>
+                <p class="strategy-card__description">
+                    Экспертная поддержка на всех этапах. Мы не просто даем советы, мы строим карьеру, которая работает
+                    на вас в долгосрочной перспективе.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__header">
+            <h2 class="benefits__title">Решения, которые <br><span class="text-highlight">меняют правила игры</span>
+            </h2>
+            <p class="benefits__subtitle">Технологии, которые работают на вас, и методологии, доказавшие эффективность
+                во всем мире.</p>
+        </div>
+
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__glass"></div>
+                <div class="benefit-card__content">
+                    <div class="benefit-card__icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Технология нового поколения</h3>
+                    <p class="benefit-card__text">Инновационная цифровая инфраструктура для глубокого анализа карьерных
+                        треков в реальном времени.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-card__glass"></div>
+                <div class="benefit-card__content">
+                    <div class="benefit-card__icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Платформа года</h3>
+                    <p class="benefit-card__text">Доступ к платформе открыт в Европе и Великобритании. Мы — ваш
+                        проверенный партнер в мире High-Tech карьеры.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-card__glass"></div>
+                <div class="benefit-card__content">
+                    <div class="benefit-card__icon">
+                        <i data-lucide="pie-chart"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Программа пассивного дохода</h3>
+                    <p class="benefit-card__text">Уникальная стратегия роста, позволяющая монетизировать ваши экспертные
+                        знания и строить пассивный доход.</p>
+                </div>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-card__glass"></div>
+                <div class="benefit-card__content">
+                    <div class="benefit-card__icon">
+                        <i data-lucide="user-check"></i>
+                    </div>
+                    <h3 class="benefit-card__title">Экспертная поддержка</h3>
+                    <p class="benefit-card__text">Поддержка по всем вопросам на всех этапах апгрейда. Мы помогаем
+                        построить карьеру, которая работает на вас.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="innovations" id="innovations">
+    <div class="container innovations__container">
+        <div class="innovations__info">
+            <span class="strategy__badge">Технологии будущего</span>
+            <h2 class="innovations__title">AI-инструменты для <span class="text-highlight">реальных задач</span></h2>
+            <p class="innovations__description">
+                Мы внедрили передовую цифровую инфраструктуру, чтобы ваш путь к вершине карьеры был автоматизирован и
+                точен. Оцените перспективы проекта с помощью наших алгоритмов.
+            </p>
+            <div class="innovations__image-box">
+                <img src="/stream-mark/assets/three-OGc5SmFQ.jpg" alt="AI Interface" class="innovations__main-img">
+                <div class="innovations__floating-tag">Next-Gen AI</div>
+            </div>
+        </div>
+
+        <div class="innovations__accordion">
+            <div class="accordion-item active">
+                <div class="accordion-header">
+                    <span class="accordion-number">01</span>
+                    <h3 class="accordion-label">Предиктивная аналитика рынка</h3>
+                    <div class="accordion-icon"><i data-lucide="plus"></i></div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>Технология нового поколения анализирует более 1000 открытых источников ежедневно,
+                            предсказывая спрос на компетенции в вашем секторе на 6-12 месяцев вперед. Это позволяет
+                            строить карьеру, которая работает на вас заранее.</p>
+                        <ul class="accordion-list">
+                            <li><i data-lucide="check-circle"></i> Анализ трендов в реальном времени</li>
+                            <li><i data-lucide="check-circle"></i> Оценка релевантности навыков</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span class="accordion-number">02</span>
+                    <h3 class="accordion-label">AI-оптимизатор профессионального профиля</h3>
+                    <div class="accordion-icon"><i data-lucide="plus"></i></div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>Инновационная технология адаптации вашего резюме и портфолио под алгоритмы ATS-систем
+                            крупнейших компаний. Мы переосмыслим подход к развитию вашего личного бренда для
+                            максимального охвата.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span class="accordion-number">03</span>
+                    <h3 class="accordion-label">Нейро-симулятор собеседований</h3>
+                    <div class="accordion-icon"><i data-lucide="plus"></i></div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>Решения, которые меняют правила игры: тренируйтесь с AI-интервьюером, который имитирует стиль
+                            общения HR-директоров топовых корпораций. Получайте мгновенную обратную связь по мимике,
+                            тону и содержанию ответов.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span class="accordion-number">04</span>
+                    <h3 class="accordion-label">Smart-трекинг карьерного роста</h3>
+                    <div class="accordion-icon"><i data-lucide="plus"></i></div>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <p>Удобная адаптация без сложностей. Платформа отслеживает каждый ваш шаг, предлагая
+                            микро-обучение именно в тот момент, когда оно необходимо для перехода на следующий уровень
+                            дохода.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="blog__top">
+            <div class="blog__title-group">
+                <span class="strategy__badge">База знаний</span>
+                <h2 class="blog__title">Практики, применимые <span class="text-highlight">уже сегодня</span></h2>
+            </div>
+            <p class="blog__intro">
+                Пошаговый путь, понятный каждому. Мы делимся экспертизой, чтобы ваш карьерный апгрейд был осознанным и
+                эффективным.
+            </p>
+        </div>
+
+        <div class="blog__grid">
+            <article class="blog-card">
+                <div class="blog-card__image">
+                    <img src="/stream-mark/assets/four-BO_R453F.jpg" alt="Career Strategy">
+                    <span class="blog-card__tag">Стратегия</span>
+                </div>
+                <div class="blog-card__content">
+                    <time class="blog-card__date">24 Января, 2026</time>
+                    <h3 class="blog-card__title">Как переосмыслить подход к развитию в эпоху AI</h3>
+                    <p class="blog-card__excerpt">Разбираем решения, которые меняют правила игры на рынке труда Лондона
+                        и ЕС в этом году.</p>
+                    <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card__image">
+                    <img src="/stream-mark/assets/five-DKmkUMra.jpg" alt="Digital Infrastructure">
+                    <span class="blog-card__tag">Технологии</span>
+                </div>
+                <div class="blog-card__content">
+                    <time class="blog-card__date">18 Января, 2026</time>
+                    <h3 class="blog-card__title">Передовая цифровая инфраструктура поиска работы</h3>
+                    <p class="blog-card__excerpt">Как настроить автоматизированные инструменты для пассивного
+                        мониторинга топовых вакансий.</p>
+                    <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card__image">
+                    <img src="/stream-mark/assets/six-FwdvRiXC.jpg" alt="Networking">
+                    <span class="blog-card__tag">Нетворкинг</span>
+                </div>
+                <div class="blog-card__content">
+                    <time class="blog-card__date">12 Января, 2026</time>
+                    <h3 class="blog-card__title">Постройте карьеру, которая работает на вас</h3>
+                    <p class="blog-card__excerpt">Методологии, доказавшие эффективность: как найти ментора в
+                        технологическом секторе за 2 минуты.</p>
+                    <a href="#contact" class="blog-card__link">Читать далее <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <div class="blog__footer">
+            <a href="#contact" class="btn btn--outline">Смотреть все статьи</a>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <span class="strategy__badge">Свяжитесь с нами</span>
+            <h2 class="contact__title">Готовы к <span class="text-highlight">апгрейду?</span></h2>
+            <p class="contact__text">
+                Запросите бесплатную консультацию по всем вопросам. Наши эксперты помогут вам оценить перспективы
+                проекта и составить пошаговый путь к цели.
+            </p>
+
+            <div class="contact__methods">
+                <div class="contact__method">
+                    <div class="contact__method-icon"><i data-lucide="mail"></i></div>
+                    <div>
+                        <p class="contact__method-label">Напишите нам</p>
+                        <a href="mailto:support@stream-mark.blog"
+                            class="contact__method-link">support@stream-mark.blog</a>
+                    </div>
+                </div>
+                <div class="contact__method">
+                    <div class="contact__method-icon"><i data-lucide="phone"></i></div>
+                    <div>
+                        <p class="contact__method-label">Позвоните нам (UK)</p>
+                        <a href="tel:+442037573481" class="contact__method-link">+442037573481</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__form-wrapper">
+            <form class="contact__form" id="career-form">
+                <div class="form-group">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Александр" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="mail@example.com"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="text" id="phone" name="phone" class="form-input" placeholder="442079460123"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Защита от ботов: <span id="captcha-question"></span></label>
+                    <input type="number" id="captcha-answer" class="form-input" placeholder="Ответ" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="privacy" required>
+                    <label for="privacy">Я согласен с <a href="./personal-data-policy.html" target="_blank">политикой
+                            конфиденциальности</a></label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full" id="submit-btn">
+                    <span>Запросить доступ</span>
+                    <i data-lucide="send" class="btn-icon"></i>
+                </button>
+
+                <div id="form-success" class="form-status form-status--success">Заявка успешно отправлена! Мы свяжемся с
+                    вами в ближайшее время.</div>
+                <div id="form-error" class="form-status form-status--error">Пожалуйста, проверьте правильность введенных
+                    данных.</div>
+            </form>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="/" class="logo footer__logo">
+        <span class="logo__dot"></span>
+        Stream Mark
       </a>
-    </p>
+      <p class="footer__description">
+        Переосмыслите подход к развитию. Платформа года для тех, кто строит карьеру будущего.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__list">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#strategy">Стратегия</a></li>
+        <li><a href="#benefits">Преимущества</a></li>
+        <li><a href="#blog">Карьерный блог</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__list">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="cookies.html">Cookie Policy</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Контакты</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>20-22 Wenlock Rd, London, N1 7GU, UK</span>
+        </li>
+        <li>
+          <i data-lucide="phone"></i>
+          <span>+442037573481</span>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@stream-mark.blog">hello@stream-mark.blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2026 Stream Mark. Предложение активно только в странах ЕС.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <p class="cookie-popup__text">
+          Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+        </p>
+        <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hover-effect/1.1.0/hover-effect.umd.js"></script>
   </body>
 </html>
